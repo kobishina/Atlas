@@ -1,0 +1,8 @@
+main h3 {
+    margin-top: 8px;
+    background-image: url(images/bg_main2.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+    width: 350px;
+}

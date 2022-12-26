@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bs/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas</title>
+    <!-- script api axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- my script -->
+    <script type="module" defer src="js_atlas/app_atlas.js"></script>
+</head>
+
+<body style="background-image: url(images/atlasBg1.jpg); background-position: center; background-size: cover;">
+    <header style="height: 150px;" class="bg-warning d-flex align-items-center justify-content-center">
+        <div class="strip container align-items-center">
+            <nav class="d-md-flex justify-content-around align-items-center ">
+                <ul class="d-flex list-unstyled col-5 justify-content-between  mt-2">
+                    <li><button class="btn_country btn btn-info mx-2 ">Israel</button></li>
+                    <li><button class="btn_country btn btn-info mx-2">USA</button></li>
+                    <li><button class="btn_country btn btn-info mx-2">Vietnam</button></li>
+                    <li><button class="btn_country btn btn-info mx-2">Russia</button></li>
+                    <li><button class="btn_country btn btn-info">Thailand</button></li>
+                </ul>
+                <div id="id_form" class="col-md-4 d-flex">
+                    <input id="id_search" class="form-control w-50 me-3" type="search" placeholder="Search For Country">
+                    <button id="btn_search" type="button" class="btn btn-success">Search</button>
+                </div>
+            </nav>
+        </div>
+            
+    </header>
+    <main class="container d-md-flex justify-content-between">
+        <div class="col-md-5 ">
+            <h3 id="id_name">name</h3>
+            <img id="id_flag" src="" alt="">
+            <h3>pop: <span id="id_pop"></span></h3>
+            <h3>region:<span id="id_region"></span></h3>
+            <h3>coin:<span id="id_coin"></span> </h3>
+            <h3>capital: <span id="id_capital"></span> </h3>
+            <div id="id_row" class="row">
+            </div>
+        </div>
+        <div id="map" class="col-md-6">
+            <iframe id="id_map" class="mt-4 col-12 mt-5 p-0" style="height: 60vh;" src="" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"></iframe>
+        </div>
+
+    </main>
+</body>
+
+</html>
